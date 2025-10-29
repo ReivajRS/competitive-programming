@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+// Pura gente del coach Moy
+using ll = long long;
+#define SZ(x) ((int)(x).size())
+
+void solve() {
+  int a, b, c, d;
+  cin >> a >> b >> c >> d;
+  int mn1 = min(a, c), mn2 = min(b, d);
+  if (mn1 >= mn2) {
+    cout << "Gellyfish" << '\n';
+  }
+  else {
+    cout << "Flower" << '\n';
+  }
+}
+
+signed main() {
+  cin.tie(0)->sync_with_stdio(0);
+  
+  int tc;
+  cin >> tc;
+  while (tc--) {
+    solve();
+  }
+  
+  return 0;
+}

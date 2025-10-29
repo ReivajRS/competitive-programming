@@ -1,0 +1,1 @@
+{"name":"Local: G","url":"/home/javier/Escritorio/CopaOmegaUp/G.cpp","tests":[{"id":1718464786688,"input":"12a\n345","output":"Ana 13"},{"id":1718465010741,"input":"123\nAB","output":"Carolina 42"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/javier/Escritorio/CopaOmegaUp/G.cpp","group":"local","local":true}

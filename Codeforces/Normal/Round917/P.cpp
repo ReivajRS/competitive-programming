@@ -1,0 +1,63 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ENDL '\n'
+#define pb push_back
+#define SZ(x) (int) x.size()
+#define ALL(x) x.begin(), x.end()
+#define FOR(i, a, b) for (int i = a; i < b; ++i)
+#define ROF(i, a, b) for (int i = a-1; i >= b; --i)
+#define _ ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+
+using ll = long long;
+using pi = pair<int, int>;
+using vi = vector<int>;
+
+constexpr int MOD = 1e9 + 7;
+constexpr int INF = 1e9;
+constexpr ll LLINF = 1e18;
+
+unordered_set<string> strs;
+
+void contar(string s) {
+    if (s == "")
+        return;
+    if (strs.count(s))
+        return;
+    strs.insert(s);
+    contar(s.substr(1));
+    if (s.length() >= 2)
+        contar(s[0] + s.substr(2));
+}
+
+void solve() {
+    int n;
+    string s;
+    cin >> n >> s;
+
+    // contar(s);
+
+    vi cnt(27);
+
+    for (char &c : s)
+        cnt[c - 'a']++;
+
+    ll sum = n*(n+1)/2, minus = 0;
+
+    ROF (i, n, 0) {
+        minus += (cnt[s[i] - 'a']-- > 1 ? n - i : 0);
+    }
+
+    cout << sum << " " << minus << ENDL;
+    
+    // cout << SZ(strs) << ENDL;
+}
+
+int main() {_
+    int tc;
+    cin >> tc;
+    while (tc--) {
+        solve();
+    }
+    return 0;
+}

@@ -1,0 +1,5 @@
+ans=0
+for q in range(1,5,1):
+  for i in range(1,5,q):
+    ans+=i
+print(ans)

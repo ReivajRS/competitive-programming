@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"/home/javier/Escritorio/CopaOmegaUp/A.cpp","tests":[{"id":1718464282845,"input":"+-+-+\n+++\n-","output":"1\n3\n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/javier/Escritorio/CopaOmegaUp/A.cpp","group":"local","local":true}
